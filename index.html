@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/ebook.js" defer></script>
+    <script src="/assets/JavaScript/ebook.js" defer></script>
             
     <title>Document</title>
 </head>
@@ -16,8 +17,8 @@
         <div class="nav-wrapper red darken-1">
           <a href="#" class="brand-logo center">GameVerse</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="active"><a href="/">Tarefas</a></li>
-            <li><a href="cadastrar.html">Criar tarefa</a></li>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="cadastrar.html">Registro Opinativo</a></li>
             <li><a href="perfil.html">Perfil</a></li>
           </ul>
         </div>
@@ -47,7 +48,7 @@
                       <p>Olá, somos uma equipe de Desenvolvedores extremamente animados para trazer nossas ideias para o mundo Web.
                          nesse site você vai poder interagir conosco acessando nossos conteúdos, e nos sugerindo novas ideias,
                          fazendo com que os jogos que vocês mais gostem tenha um E-Book próprio!</p>
-                      <span data-badge-caption ="pontos" class="badge blue white-text">4</span>
+                      
 
                     </div>
                     
@@ -61,6 +62,7 @@
                 </div>
               </div>
             
+
               <label>Option Select</label>
               <select class="browser-default campo" name="tipo" id="tipo">
                 
@@ -78,6 +80,7 @@
                 <a href="assets/pdf/E-book Payday 3.pdf" class="collection-item active red darken-4">Payday 3</a>
                 <a href="assets/pdf/Zelda TOTK Ebook.pdf" class="collection-item active red darken-4">Zelda</a>
               </div>
+        
       </main>
 
       <div class="fixed-action-btn">
@@ -87,17 +90,29 @@
      
       </div>
 
-      <div>
-
+      
+        <div id="secao-feedback">
+        
         <output>
-                       
+          
           <a href="" id="ebookName"></a>
           <a href="" id="ebook" target="_blank">
               <img src="" id="ebookImg"alt="">
           </a>
         </output>
-  
-    </div>
+       
+        <h4>Avalie a sua satisfação</h4>
+        <div class="rating-container">
+            <div class="rating" id="rating-1">1</div>
+            <div class="rating" id="rating-2">2</div>
+            <div class="rating" id="rating-3">3</div>
+            <div class="rating" id="rating-4">4</div>
+            <div class="rating" id="rating-5">5</div>
+        </div>
+        <p class="selected-rating">Sua classificação: <span id="selected-rating">0</span></p>
+        
+        </div>
+        
 
 </body>
 </html>

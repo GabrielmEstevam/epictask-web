@@ -1,3 +1,5 @@
+    // Código para a Implementação da função visualizar Ebook
+
 const ebookName = document.querySelector("#ebookName")
     const campoTipo = document.querySelector("#tipo")
     const campoLink = document.querySelector("#ebook")
@@ -40,6 +42,24 @@ function ebook() {
         campoImg.removeAttribute("src");
         campoLink.removeAttribute("href");
     }
+
+    // Código para a avaliação do Usuário
+
+
+    const ratings = document.querySelectorAll('.rating');
+    const selectedRating = document.getElementById('selected-rating');
+    
+    ratings.forEach((rating) => {
+        rating.addEventListener('click', () => {
+           
+            ratings.forEach((r) => r.classList.remove('selected'));
+    
+            rating.classList.add('selected');
+    
+            selectedRating.textContent = rating.textContent;
+        });
+    });
+
 
 
 }

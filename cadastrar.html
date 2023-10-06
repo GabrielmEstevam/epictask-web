@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/JavaScript/script.js" defer></script>
             
     <title>Document</title>
 </head>
@@ -16,8 +18,8 @@
         <div class="nav-wrapper deep-purple darken-3">
           <a href="#" class="brand-logo center">Epic Task</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li ><a href="/">Tarefas</a></li>
-            <li class="active"><a href="cadastrar.html">Criar tarefa</a></li>
+            <li ><a href="index.html">Tarefas</a></li>
+            <li class="active"><a href="cadastrar.html">Registro Opinativo</a></li>
             <li><a href="perfil.html">Perfil</a></li>
           </ul>
         </div>
@@ -25,26 +27,24 @@
 
       <main class="container">
 
-        <h4>Cadastrar Tarefa</h4>
+        <h4>Ideias de E-Book</h4>
 
       <div class="row">
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12">
-              <input id="titulo" type="text" class="validate" minlength="3">
-              <label for="titulo">Título</label>
-              <span 
-              class="helper-text" 
-              data-error="Título muito curto. Preencha um titulo com pelo menos 3 caracteres" 
-              data-success="Certo">Digite o título da Tarefa
-              </span>
+                <input id="titulo" type="text" class="validate" minlength="3">
+                  <label for="titulo">Título</label>
+        <span 
+          class="helper-text" 
+          data-error="Título muito curto. Preencha um titulo com pelo menos 3 caracteres" 
+          data-success="Certo">Insira seu jogo mais aguardado</span>
+        </div>
 
-            </div>
-
-          </div>
+        </div>
 
           <div class="row">
-            <div class="input-field col s12">
+              <div class="input-field col s12">
               <textarea id="descricao" class="materialize-textarea"></textarea>
               <label for="descricao">Descrição</label>
           </div>
@@ -52,34 +52,57 @@
           </div>
           
           <div class="row">
-            <div class="input-field col s12">
+              <div class="input-field col s12">
               <input id="pontos" type="number" class="validate" min ="1" max="100">
               <label for="pontos">Pontos</label>
-                <span
-                class="helper-text" 
-                data-error="Pontuação inválida. Informe um valor entre 1 e 100" 
-                data-success="">Digite a pontuação da Tarefa
-                </span>
+              <span
+              class="helper-text" 
+              data-error="Pontuação inválida. Informe um valor entre 1 e 100" 
+              data-success="">Digite a pontuação da Tarefa
+              </span>
 
             </div>
 
           </div>
           <div class="row">
               <div class="col">
-                <a href="index.html" class="btn blue-grey">cancelar</a>
+                <a href="index.html" class="waves-effect waves-light btn blue-grey darken-1 ">Cancelar</a>
               </div>
               <div class="col">
-                <a href="index.html" class="btn green">Salvar</a>
+                <a href="index.html" class="waves-effect waves-light btn btn teal darken-4">Salvar</a>
+                
               </div>
           </div>
 
+          <h2>Qual Parte do site te Agradou mais?</h2>
+          <div class="options-container">
+              <div class="option" id="option-1">Layout</div>
+              <div class="option" id="option-2">E-books</div>
+              <div class="option" id="option-3">Design do site</div>
+              <div class="option" id="option-4">Nenhuma das Anteriores</div>
+              
+          </div>
+          <p class="selected-option">Opção selecionada: <span id="selected-option">Nenhuma</span></p>
+
         </form>
       </div>
+    <header>
+      <div class="roulette-container" id = "roulette">
+        <div class="roulette">
+            <img src="assets/img/roleta 4 (1).png" alt="Roleta">
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="spinWheel()">Rodar</button>
+    </div>
+
+    
+    </header>
 
       </main>
 
      
-      </div>
+      
 
 </body>
 </html>
