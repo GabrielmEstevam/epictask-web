@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/JavaScript/script.js" defer></script>
-            
+    <script src="./assets/JavaScript/script.js" defer></script>
+    <script src="./assets/JavaScript/cadastrar.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <nav>
 
-        <div class="nav-wrapper deep-purple darken-3">
+        <div class="nav-wrapper red darken-1">
           <a href="#" class="brand-logo center">Epic Task</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li ><a href="index.html">Tarefas</a></li>
@@ -30,7 +30,7 @@
         <h4>Ideias de E-Book</h4>
 
       <div class="row">
-        <form class="col s12">
+        <div class="col s12">
           <div class="row">
             <div class="input-field col s12">
                 <input id="titulo" type="text" class="validate" minlength="3">
@@ -69,7 +69,7 @@
                 <a href="index.html" class="waves-effect waves-light btn blue-grey darken-1 ">Cancelar</a>
               </div>
               <div class="col">
-                <a href="index.html" class="waves-effect waves-light btn btn teal darken-4">Salvar</a>
+                <button id="botao-cadastrar" class="waves-effect waves-light btn btn teal darken-4" >Salvar</button> 
                 
               </div>
           </div>
@@ -84,8 +84,9 @@
           </div>
           <p class="selected-option">Opção selecionada: <span id="selected-option">Nenhuma</span></p>
 
-        </form>
+        </div>
       </div>
+
     <header>
       <div class="roulette-container" id = "roulette">
         <div class="roulette">
