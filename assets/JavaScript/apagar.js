@@ -10,4 +10,5 @@ function apagar(id){
 
     //salvar o local storage
     localStorage.setItem("tarefas",JSON.stringify(tarefas_filtradas))
+    atualizar()
 }
