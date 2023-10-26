@@ -12,10 +12,9 @@ function criarCard (tarefa) {
     card.classList.add("col","s12","m6","l4")
 
     card.innerHTML = `
-                <div class="col s12 m6">
-                <div class="card  ${tarefa.concluida ? 'teal darken-3' : 'red accent-4'}">
-               
-                 
+  
+                  <div class="card  ${tarefa.concluida ? 'teal darken-3' : 'red lighten-1'}">
+  
                     <div class="card-content white-text">
                       <span class="card-title">${tarefa.titulo}</span>
                       <p>${tarefa.descricao}</p>
@@ -31,8 +30,8 @@ function criarCard (tarefa) {
                       <a href="#" class="btn light blue" onClick="concluir(${tarefa.id})">
                         <i class="material-icons">done_all</i></a>
                     </div>
+
                   </div>
-                </div>
     `
 document.querySelector("#lista-tarefas").appendChild(card)
 
